@@ -90,7 +90,7 @@ Terraform state is stored in S3:
 
 | Key | Value |
 |---|---|
-| Bucket | `orchestrator-bucket` |
+| Bucket | `urukube-orchestrator-tfstate` |
 | State key | `orchestrator/eks_infra/terraform.tfstate` |
 
 The bucket is created automatically by the workflow on first run if it doesn't exist.

@@ -39,7 +39,7 @@ jobs:
     uses: "urukube/orchestrator-plane-setup/.github/workflows/destroy.yml@v1"
     with:
       tfvar_file_path: "orchestrator.tfvars"
-      bucket_name: "orchestrator-bucket"
+      bucket_name: "urukube-orchestrator-tfstate"
       approvers: "dilipsamanta"
       master_s3_directory: "orchestrator"
       component: ${{ github.event.inputs.component }}

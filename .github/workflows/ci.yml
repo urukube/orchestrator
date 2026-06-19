@@ -14,7 +14,7 @@ jobs:
     uses: "urukube/orchestrator-plane-setup/.github/workflows/main.yml@v1"
     with:
       tfvar_file_path: "orchestrator.tfvars"
-      bucket_name: "orchestrator-bucket"
+      bucket_name: "urukube-orchestrator-tfstate"
       approvers: "dilipsamanta"
       master_s3_directory: "orchestrator"
       module_ref: "v1"
