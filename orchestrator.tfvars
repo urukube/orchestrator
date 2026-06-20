@@ -26,6 +26,8 @@ max_size          = 3
 desired_size      = 3
 max_pods_per_node = 50
 
+cluster_kubernetes_version = "1.36"
+
 is_eks_managed_node_group = false
 # EKS API Server Endpoint Access
 cluster_endpoint_access_type         = "public"
