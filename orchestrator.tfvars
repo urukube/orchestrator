@@ -32,3 +32,15 @@ is_eks_managed_node_group = false
 # EKS API Server Endpoint Access
 cluster_endpoint_access_type         = "public"
 cluster_endpoint_public_access_cidrs = ["101.0.62.119/32"]
+
+# Platform domain
+domain_url = "platform.urukube.io"
+
+# Orchestrator custom addons
+enable_istio      = true
+enable_argocd     = true
+enable_prometheus = true
+enable_kiali      = true
+enable_eso        = true
+enable_ecr        = true
+enable_crossplane = true
