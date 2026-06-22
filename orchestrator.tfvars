@@ -39,8 +39,8 @@ domain_url = "platform.urukube.io"
 # Orchestrator custom addons
 enable_istio      = true
 enable_argocd     = true
-enable_prometheus = true
-enable_kiali      = true
-enable_eso        = true
-enable_ecr        = true
-enable_crossplane = true
+enable_prometheus = false
+enable_kiali      = false
+enable_eso        = false
+enable_ecr        = false
+enable_crossplane = false
