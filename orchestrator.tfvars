@@ -31,7 +31,7 @@ cluster_kubernetes_version = "1.36"
 is_eks_managed_node_group = false
 # EKS API Server Endpoint Access
 cluster_endpoint_access_type         = "private_with_public_cidrs"
-cluster_endpoint_public_access_cidrs = ["101.0.62.119/32"]
+cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"]
 
 # Platform domain
 domain_url = "platform.urukube.io"
