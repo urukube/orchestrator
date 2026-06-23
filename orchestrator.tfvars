@@ -44,3 +44,23 @@ enable_kiali      = true
 enable_eso        = true
 enable_ecr        = true
 enable_crossplane = true
+
+# ESO configuration — ExternalSecrets to sync from Secrets Manager
+external_secrets = {
+  argocd-github-token = {
+    namespace          = "argocd"
+    target_secret_name = "argocd-github-token"
+    creation_policy    = "Owner"
+    mappings = [
+      { secret_key = "token", remote_key = "platform/github/github-token" }
+    ]
+  }
+  argocd-admin-password = {
+    namespace          = "argocd"
+    target_secret_name = "argocd-secret"
+    creation_policy    = "Merge"
+    mappings = [
+      { secret_key = "admin.password", remote_key = "platform/argocd/admin-password" }
+    ]
+  }
+}
