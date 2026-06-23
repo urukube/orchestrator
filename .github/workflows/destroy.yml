@@ -10,6 +10,7 @@ name: "orchestrator-destroy"
         type: choice
         options:
           - argocd_configuration
+          - orchestrator_secret_management
           - orchestrator_custom_addons
           - eks_essential_addons
           - eks_infra
