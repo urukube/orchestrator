@@ -44,6 +44,7 @@ enable_kiali      = true
 enable_eso        = true
 enable_ecr        = true
 enable_crossplane = true
+enable_komoplane  = true
 
 # ESO configuration — ExternalSecrets to sync from Secrets Manager
 external_secrets = {

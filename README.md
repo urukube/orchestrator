@@ -13,6 +13,7 @@ The Orchestrator Cluster is the single platform-team-owned cluster that runs thr
 | Component | Role |
 |---|---|
 | **Crossplane** | Reconciles CRDs into cloud infrastructure — when a BU requests an environment via Backstage, Crossplane provisions the VPC, EKS cluster, IAM roles, and node pools |
+| **Komoplane** | Read-only UI for visualising Crossplane composite resources, claims, and their dependency graph |
 | **ArgoCD** | Detects newly provisioned BU clusters and deploys app-of-apps (ingress, cert-manager, observability agents, policy controllers, secrets operator) |
 | **Backstage** | Self-service portal where BU engineers submit environment requests that generate the CRDs Crossplane acts on |
 
